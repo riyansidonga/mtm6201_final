@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Plant Palette</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/hover.css@2.3.2/css/hover-min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&Lora:wght@600&Montserrat:wght@700&Open+Sans&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Plant Palette Logo" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero text-center">
+        <div class="container">
+            <h1 class="display-1">Our Plants</h1>
+            <p class="lead">Explore our curated collection of plants.</p>
+        </div>
+    </header>
+
+    <main id="main-content" class="container my-5">
+        <section class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="images/plant1-large.jpg">
+                        <source media="(max-width: 767px)" srcset="images/plant1-small.jpg">
+                        <img src="images/plant1-large.jpg" class="card-img-top" alt="Peace Lily plant">
+                    </picture>
+                    <div class="card-body">
+                        <h3 class="card-title">Peace Lily</h3>
+                        <p class="card-text">Elegant white blooms for low-light spaces.</p>
+                        <a href="#" class="btn btn-primary hvr-grow">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="images/plant2-large.jpg">
+                        <source media="(max-width: 767px)" srcset="images/plant2-small.jpg">
+                        <img src="images/plant2-large.jpg" class="card-img-top" alt="Snake Plant">
+                    </picture>
+                    <div class="card-body">
+                        <h3 class="card-title">Snake Plant</h3>
+                        <p class="card-text">Hardy and low-maintenance with striking leaves.</p>
+                        <a href="#" class="btn btn-primary hvr-grow">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="images/plant3-large.jpg">
+                        <source media="(max-width: 767px)" srcset="images/plant3-small.jpg">
+                        <img src="images/plant3-large.jpg" class="card-img-top" alt="Pothos plant">
+                    </picture>
+                    <div class="card-body">
+                        <h3 class="card-title">Pothos</h3>
+                        <p class="card-text">Trailing vines perfect for beginners.</p>
+                        <a href="#" class="btn btn-primary hvr-grow">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-4">
+        <p>&copy; 2025 Plant Palette. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
