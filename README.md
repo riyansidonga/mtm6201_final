@@ -7,7 +7,7 @@ This is the final project for MTM6201, a responsive website for **Plant Palette*
 ## Process
 1. **Planning**:
    - Utilized the high-fidelity wireframe from the User Experience I course as a guide to structure the website.
-   - Planned three pages: Home (featuring a hero section and highlighted dishes), Menu (showcasing the restaurant’s offerings), and Contact (providing restaurant details and a contact form).
+   - Planned three pages: Home (featuring a hero section and highlighted dishes), Menu (showcasing the restaurant’s offerings), and Contact (providing restaurant details and a F&Q).
    - Selected a color scheme (Primary-1: #A1D6A5, Primary-2: #2E3D49, Primary-3: #3F5246, Secondary-1: #F9F9F9, Secondary-2: #5A6D7B) and fonts (Playfair Display, Lora, Montserrat, Open Sans) to align with the restaurant’s fresh and modern aesthetic.
 
 2. **Development**:
@@ -16,7 +16,7 @@ This is the final project for MTM6201, a responsive website for **Plant Palette*
    - Used **Hover.css** for button hover effects, applying the `hvr-grow` class to enhance interactivity.
    - Applied **Google Fonts**: Playfair Display for primary headings, Lora for section headings, Montserrat for content headings, and Open Sans for body text, buttons, and links.
    - Defined CSS variables (e.g., `--primary-1: #A1D6A5`) to customize Bootstrap’s default color scheme, ensuring brand consistency.
-   - Implemented the `<picture>` tag with `srcset` to serve large (1200px) and small (600px) versions of images for optimal performance.
+   - Implemented the `<picture>` tag with `srcset` to serve large and small versions of images for optimal performance.
    - Added accessibility features, including semantic HTML, ARIA roles (e.g., `aria-current` for active navigation links), skip links, alt text for images, and keyboard navigation support.
    - Incorporated stock images from Unsplash and Pinterest (listed below) to visually represent the restaurant’s ambiance and menu items.
 
@@ -27,10 +27,9 @@ This is the final project for MTM6201, a responsive website for **Plant Palette*
 ## Challenges and Solutions
 - **Challenge**: Balancing Bootstrap’s default styles with the custom design requirements.
   - **Solution**: Used CSS variables and targeted selectors to override Bootstrap’s defaults (e.g., setting `--primary-1` for buttons and headings) without disrupting its responsive features.
-- **Challenge**: Ensuring accessibility for keyboard users and screen readers.
-  - **Solution**: Implemented skip links, focus states, and ARIA attributes; conducted keyboard navigation tests to verify usability.
 - **Challenge**: Optimizing images for performance while maintaining quality.
-  - **Solution**: Created large (2200px) and small (800px) versions of each image, using the `<picture>` tag with `srcset` and media queries to deliver the appropriate size based on device.
+  - **Solution**: Created large and small versions of each image, using the `<picture>` tag with `srcset` and media queries to deliver the appropriate size based on device.But some images are not in good quality.
+- **Challenge**: - I found it challenging to create the main menu for the menu page, especially organizing the layout and making it visually clear and functional.
 
 ## Lessons Learned
 - **Bootstrap Customization**: Learned to efficiently override Bootstrap’s default styles using CSS variables and specific selectors, maintaining its responsive functionality.
@@ -52,7 +51,7 @@ This is the final project for MTM6201, a responsive website for **Plant Palette*
     - Open Sans (Regular) - Used for body text, buttons, and links.
 
 - **Images**:
-  - All images were sourced from Unsplash and Pinterest with appropriate usage rights. They were optimized into large (1200px) and small (600px) versions for responsiveness. The images used are:
+  - All images were sourced from Unsplash and Pinterest with appropriate usage rights. They were optimized into large and small versions for responsiveness. The images used are:
     - [Brown wooden table and chairs](https://unsplash.com/photos/brown-wooden-table-and-chairs-WItC-f-K2Ho) - Home Page Hero banner (Unsplash, WItC-f-K2Ho).
     - [Green and red flower painting](https://unsplash.com/photos/green-and-red-flower-painting-sefKM7XR56I) - Home page Banner (Unsplash, sefKM7XR56I).
     - [White ceramic bowl on plate](https://unsplash.com/photos/white-ceramic-bowl-on-white-ceramic-plate-ou_7_3e-AqU) - Menu page banner (Unsplash, ou_7_3e-AqU).
@@ -73,6 +72,6 @@ This is the final project for MTM6201, a responsive website for **Plant Palette*
   - Menu items and decor - Sourced from the listed Unsplash and Pinterest images, optimized for web use.
 
 ## Deployment
-The site is hosted on GitHub Pages and can be accessed at `https://github.com/riyansidonga/mtm6201_final.git`
+The site is hosted on GitHub Pages and can be accessed at `https://riyansidonga.github.io/mtm6201_final/index`
 
 **Created by Riyansi Donga for MTM6201, April 2025.**
