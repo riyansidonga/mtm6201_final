@@ -1,4 +1,3 @@
-/* CSS Variables for Brand Colors */
 :root {
     --primary-1: #A1D6A5;
     --primary-2: #2E3D49;
@@ -8,7 +7,6 @@
     --button-hover: #7BBF87;
 }
 
-/* General Styles */
 body {
     font-family: 'Open Sans', sans-serif;
     color: var(--secondary-2);
@@ -30,7 +28,6 @@ h3 {
     color: var(--primary-3);
 }
 
-/* Skip Link */
 .skip-link {
     position: absolute;
     top: -40px;
@@ -55,7 +52,6 @@ h3 {
     color: var(--secondary-1) !important;
 }
 
-/* Navbar */
 .navbar {
     background-color: var(--primary-1);
 }
@@ -76,7 +72,6 @@ h3 {
     color: var(--secondary-2) !important;
 }
 
-/* Buttons */
 .primary-btn {
     font-family: 'Open Sans', sans-serif;
     background-color: var(--primary-1);
@@ -106,7 +101,6 @@ h3 {
     color: var(--secondary-1);
 }
 
-/* Links */
 a {
     color: var(--primary-3);
     text-decoration: underline;
@@ -117,7 +111,6 @@ a:active {
     color: var(--primary-1);
 }
 
-/* Hero Section */
 .hero {
     position: relative;
 }
@@ -164,7 +157,6 @@ a:active {
     color: var(--primary-1);
 }
 
-/* Sections */
 .specials    {
     background-color: var(--primary-1);
 }
@@ -177,7 +169,7 @@ a:active {
 .menu-items img,
 .contact-info img {
     width: 100%;
-    height: 40  0px;
+    height: 90;
     object-fit: cover;
     margin-bottom: 1rem;
 }
