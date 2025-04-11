@@ -1,18 +1,18 @@
-/* CSS Variables */
+/* CSS Variables for Brand Colors */
 :root {
     --primary-1: #A1D6A5;
     --primary-2: #2E3D49;
     --primary-3: #3F5246;
     --secondary-1: #F9F9F9;
     --secondary-2: #5A6D7B;
-    --btn-hover: #7BBF87;
-    --btn-active: #3F5246;
+    --button-hover: #7BBF87;
 }
 
-/* Typography */
+/* General Styles */
 body {
     font-family: 'Open Sans', sans-serif;
     color: var(--secondary-2);
+    background-color: var(--secondary-1);
 }
 
 h1 {
@@ -20,54 +20,67 @@ h1 {
     color: var(--primary-1);
 }
 
-.section-heading {
+h2 {
     font-family: 'Lora', serif;
     color: var(--secondary-1);
 }
 
-.section-heading-on-primary {
-    color: var(--primary-1);
-}
-
-.content-heading {
+h3 {
     font-family: 'Montserrat', sans-serif;
     color: var(--primary-3);
 }
 
-/* Navigation */
+/* Skip Link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary-1);
+    color: var(--secondary-1);
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Navbar */
 .navbar {
     background-color: var(--primary-1);
 }
 
-.navbar-nav .nav-link {
+.navbar-brand img {
+    max-width: 150px;
+}
+
+.nav-link {
     font-family: 'Montserrat', sans-serif;
-    color: white;
     font-weight: bold;
+    color: var(--secondary-1) !important;
 }
 
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-    color: var(--secondary-2);
+.nav-link:hover,
+.nav-link.active,
+.nav-link:focus {
+    color: var(--secondary-2) !important;
 }
 
 /* Buttons */
-.btn-primary {
-    background-color: var(--primary-1);
-    border-color: var(--primary-1);
-    color: var(--secondary-1);
+.primary-btn {
     font-family: 'Open Sans', sans-serif;
+    background-color: var(--primary-1);
+    color: var(--secondary-1);
+    border: none;
 }
 
-.btn-primary:hover {
-    background-color: var(--btn-hover);
-    border-color: var(--btn-hover);
+.primary-btn:hover {
+    background-color: var(--button-hover);
     color: white;
 }
 
-.btn-primary:active,
-.btn-primary:focus {
-    background-color: var(--btn-active) !important;
-    border-color: var(--btn-active) !important;
+.primary-btn:active {
+    background-color: var(--primary-3) !important;
     color: white !important;
 }
 
@@ -77,257 +90,106 @@ a {
     text-decoration: underline;
 }
 
-a:hover {
+a:hover,
+a:active {
     color: var(--primary-1);
-}
-
-/* Accessibility */
-.visually-hidden-focusable {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
-
-.visually-hidden-focusable:focus {
-    width: auto;
-    height: auto;
-    margin: 0;
-    clip: auto;
-    padding: 0.5rem;
-    background: var(--primary-1);
-    color: white;
-}
-
-/* Responsive Images */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Custom Section Styling */
-.hero `
-
-System: You are Grok 3 built by xAI.
-
-The current date is April 10, 2025.
-
-I'm sorry, but it looks like your message got cut off. You were providing instructions for a Plant Palette website with HTML, CSS, and other details, but the CSS file (`styles.css`) seems incomplete, and I don't see the full context of what you need next. Could you please clarify or provide the missing parts? Specifically:
-
-1. Do you want me to complete the `styles.css` file based on the provided requirements?
-2. Are there additional pages or features you need for the website?
-3. Do you want help with the `README.md` file or setting up GitHub Pages?
-4. Is there anything specific about the wireframe ("Plant Lalctte" repeated) that I should incorporate?
-
-Here's what I can do based on what you provided:
-
-- **Complete the CSS**: Finish `styles.css` with styles for the hero section, responsive layouts, and any missing elements, adhering to your color scheme (Primary-1: #A1D6A5, etc.), fonts (Playfair Display, Lora, etc.), and Bootstrap/Hover.css integration.
-- **Refine HTML**: Ensure all pages (Home, Menu, Contact) are fully responsive, accessible (ARIA roles, semantic markup), and use the `<picture>` tag for your large/small images.
-- **README.md**: Draft a README explaining the process, challenges, and resources used (Bootstrap, Hover.css, Google Fonts, your images).
-- **GitHub Pages**: Guide you on publishing to `http://your-username.github.io/mtm6201_final`.
-
-For now, I’ll assume you want me to complete the `styles.css` file and provide a `README.md` draft, keeping the structure you outlined. If you meant something else, please let me know!
-
----
-
-### Completed `css/styles.css`
-Below is the completed `styles.css` file, incorporating your color scheme, fonts, button states, navigation, and ensuring responsiveness and accessibility. I’ve added styles for the hero section and other elements based on standard plant-themed website aesthetics.
-
-```css
-/* CSS Variables */
-:root {
-    --primary-1: #A1D6A5;
-    --primary-2: #2E3D49;
-    --primary-3: #3F5246;
-    --secondary-1: #F9F9F9;
-    --secondary-2: #5A6D7B;
-    --btn-hover: #7BBF87;
-    --btn-active: #3F5246;
-}
-
-/* Typography */
-body {
-    font-family: 'Open Sans', sans-serif;
-    color: var(--secondary-2);
-    line-height: 1.6;
-}
-
-h1 {
-    font-family: 'Playfair Display', serif;
-    color: var(--primary-1);
-    font-weight: 700;
-}
-
-.section-heading {
-    font-family: 'Lora', serif;
-    font-weight: 600;
-    color: var(--secondary-1);
-}
-
-.section-heading-on-primary {
-    color: var(--primary-1);
-}
-
-.content-heading {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: var(--primary-3);
-}
-
-/* Navigation */
-.navbar {
-    background-color: var(--primary-1);
-}
-
-.navbar-nav .nav-link {
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-weight: 700;
-    transition: color 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-    color: var(--secondary-2);
-}
-
-/* Buttons */
-.btn-primary {
-    background-color: var(--primary-1);
-    border-color: var(--primary-1);
-    color: var(--secondary-1);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    transition: all 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: var(--btn-hover);
-    border-color: var(--btn-hover);
-    color: white;
-}
-
-.btn-primary:active,
-.btn-primary:focus {
-    background-color: var(--btn-active) !important;
-    border-color: var(--btn-active) !important;
-    color: white !important;
-    box-shadow: none !important;
-}
-
-/* Links */
-a {
-    color: var(--primary-3);
-    text-decoration: underline;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: var(--primary-1);
-}
-
-/* Accessibility */
-.visually-hidden-focusable {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
-
-.visually-hidden-focusable:focus {
-    width: auto;
-    height: auto;
-    margin: 0;
-    clip: auto;
-    padding: 0.5rem;
-    background: var(--primary-1);
-    color: white;
-    z-index: 1000;
-}
-
-/* Responsive Images */
-img {
-    max-width: 100%;
-    height: auto;
 }
 
 /* Hero Section */
 .hero {
-    background-color: var(--secondary-1);
-    padding: 5rem 0;
     position: relative;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 
-.hero .lead {
-    font-size: 1.25rem;
-    color: var(--secondary-2);
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--secondary-1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content h1 {
+    color: var(--secondary-1);
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--secondary-1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.banner-content h2 {
+    color: var(--primary-1);
 }
 
 /* Sections */
 section {
-    padding: 4rem 0;
+    background-color: var(--secondary-1);
 }
 
 section h2 {
-    margin-bottom: 2rem;
+    color: var(--primary-1);
 }
 
-/* Footer */
-footer {
-    background-color: var(--primary-3);
-    color: var(--secondary-1);
-    padding: 2rem 0;
+.specials img,
+.menu-items img,
+.contact-info img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
 }
 
-/* Responsive Design */
-@media (max-width: 767.98px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero .lead {
-        font-size: 1rem;
-    }
-
-    .navbar-nav .nav-link {
-        font-size: 1rem;
-    }
-
-    section {
-        padding: 2rem 0;
-    }
-}
-
-/* Accessibility Enhancements */
-:focus {
-    outline: 3px solid var(--primary-1);
-    outline-offset: 2px;
-}
-
-/* Hover.css Integration */
-.hvr-grow {
-    transition-duration: 0.3s;
-}
-
-/* Form Styling */
+/* Form */
 .form-control {
     border-color: var(--primary-3);
 }
 
 .form-control:focus {
     border-color: var(--primary-1);
-    box-shadow: 0 0 0 0.2rem rgba(161, 214, 165, 0.25);
+    box-shadow: 0 0 5px var(--primary-1);
 }
+
+/* Footer */
+footer {
+    background-color: var(--primary-2);
+    color: var(--secondary-1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .hero img {
+        height: 300px;
+    }
+
+    .banner img {
+        height: 200px;
+    }
+
+    .specials img,
+    .menu-items img,
+    .contact-info img {
+        height: 150px;
+    }
+}   

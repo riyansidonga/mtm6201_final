@@ -18,76 +18,76 @@
    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
 
    <!-- Navigation -->
-   <nav class="navbar navbar-expand-lg" style="background-color: var(--primary-1);">
-       <div class="container">
-           <a class="navbar-brand" href="index.html">
-               <picture>
-                   <source media="(min-width: 768px)" srcset="images/logo-large.png">
-                   <img src="images/logo-small.png" alt="Plant Palette Logo" class="img-fluid" style="max-height: 50px;">
-               </picture>
-           </a>
-           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-           </button>
-           <div class="collapse navbar-collapse" id="navbarNav">
-               <ul class="navbar-nav ms-auto">
-                   <li class="nav-item">
-                       <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                   </li>
-                   <li class="nav-item">
-                       <a class="nav-link" href="menu.html">Menu</a>
-                   </li>
-                   <li class="nav-item">
-                       <a class="nav-link" href="contact.html">Contact</a>
-                   </li>
-               </ul>
-           </div>
-       </div>
-   </nav>
+   <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/logo-large.png">
+                <img src="images/logo-small.png" alt="Plant Palette Logo" class="logo">
+            </picture>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-   <!-- Main Content -->
-   <main id="main-content">
-       <!-- Hero Section -->
-       <section class="hero text-center py-5" style="background-color: var(--secondary-1);">
-           <div class="container">
-               <h1 class="display-4">Welcome to Plant Palette</h1>
-               <p class="lead">Discover the beauty of plants to brighten your space.</p>
-               <a href="menu.html" class="btn btn-primary hvr-grow">Shop Now</a>
-           </div>
-       </section>
+<!-- Main Content -->
+<main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <picture>
+            <source media="(min-width: 768px)" srcset="images/hero-img-large.jpg">
+            <img src="images/hero-img-small.jpg" alt="Cozy wooden table setting" class="img-fluid">
+        </picture>
+        <div class="hero-text">
+            <h1>Where Health Meets Flavour</h1>
+            <p>Fresh, organic, and locally sourced ingredients crafted into unforgettable flavours.</p>
+            <a href="menu.html" class="btn primary-btn hvr-grow">Reserve a Table</a>
+        </div>
+    </section>
 
-       <!-- Featured Plants -->
-       <section class="py-5" style="background-color: var(--primary-2);">
-           <div class="container">
-               <h2 class="section-heading text-center mb-4">Featured Plants</h2>
-               <div class="row">
-                   <div class="col-md-6 mb-4">
-                       <picture>
-                           <source media="(min-width: 768px)" srcset="images/plant1-large.jpg">
-                           <img src="images/plant1-small.jpg" alt="Featured Plant 1" class="img-fluid rounded">
-                       </picture>
-                       <h3 class="content-heading mt-3">Monstera Deliciosa</h3>
-                       <p>A stunning tropical plant with lush green leaves.</p>
-                   </div>
-                   <div class="col-md-6 mb-4">
-                       <picture>
-                           <source media="(min-width: 768px)" srcset="images/plant2-large.jpg">
-                           <img src="images/plant2-small.jpg" alt="Featured Plant 2" class="img-fluid rounded">
-                       </picture>
-                       <h3 class="content-heading mt-3">Fiddle Leaf Fig</h3>
-                       <p>Elegant and vibrant, perfect for any room.</p>
-                   </div>
-               </div>
-           </div>
-       </section>
-   </main>
+    <!-- Specials Section -->
+    <section class="specials container my-5">
+        <h2>Specials</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="images/miso-tofu-bowl-small.jpg">
+                    <img src="images/miso-tofu-bowl-small.jpg" alt="miso-tofu-bowl" class="img-fluid rounded">
+                </picture>
+                <h3>Dark Chocolate Avocado Mousse</h3>
+                <p>Silky smooth mousse made with ripe avocados, dark cocoa, and maple syrup.</p>
+            </div>
+            <div class="col-md-6 mb-4">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="images/moose-large.jpg">
+                    <img src="images/moose-small.jpg" alt="Green plant dessert" class="img-fluid rounded">
+                </picture>
+                <h3>Miso-Glazed Tofu Bowl</h3>
+                <p>Marinated tofu with stir-fried bok choy, edamame, and brown rice, topped with sesame seeds.</p>
+            </div>
+        </div>
+    </section>
+</main>
 
-   <!-- Footer -->
-   <footer class="text-center py-4" style="background-color: var(--primary-3); color: var(--secondary-1);">
-       <div class="container">
-           <p>&copy; 2025 Plant Palette. All rights reserved.</p>
-       </div>
-   </footer>
+<!-- Footer -->
+<footer class="text-center py-4">
+    <p>&copy; 2025 Plant Palette. All rights reserved.</p>
+</footer>
 
    <!-- Bootstrap JS -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
