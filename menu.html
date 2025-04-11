@@ -10,72 +10,161 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+    <!-- Skip Link -->
+   <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
 
-    <header>
-        <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="images/logo-large.png">
-                        <img src="images/logo-small.png" alt="Plant Palette logo" class="img-fluid">
-                    </picture>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+   <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/logo-large.png">
+                <img src="images/logo-small.png" alt="Plant Palette Logo" class="logo">
+            </picture>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link"  href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main id="main-content">
+    <section class="hero text">
+        <picture>
+            <source media="(min-width: 768px)" srcset="images/menu-banner-large .jpg">
+            <img src="images/menu-banner-small.jpg" alt="Cozy wooden table setting" class="img-fluid">
+        </picture>
+    </section>   
+    <section class="text-center">
+        <h2>Menu</h2>
+        <p>Welcome to Plant Palette, where we celebrate fresh, organic, and ethically sourced ingredients. Our menus are crafted with care, offering something for everyone, including families and those with dietary preferences.</p>
+        <h2>Allergans</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <p>Vegetarian – 🥦</p>
+                <p>Vegan – 🌱</p>
+                <p>Dairy-Free – 🥛</p>
+            </div>
+            <div class="col-md-6 mb-4">
+            <p>Egg-Free – 🥚 </p>
+            <p>Gluten-Free – 🌾</p>
+            <P></P>Nut-Free – 🥜</P>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-items container py-5">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="images/menu-soup-small.jpg">
+                    <img src="images/menu-soup-large.jpg" alt="Creamy soup with green leaf garnish" class="img-fluid">
+                </picture>
+            </div>
+            <div class="col-md-6 mb-4">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="images/sandwich-large.jpg">
+                    <img src="images/sandwich-small.jpg" alt="Fresh vegetable sandwich on chopping board" class="img-fluid">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container">
+                    <h3> Main Menu</h3>
+                    <div>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="cta-link" aria-current="page" href="menu.html">Starters</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+                            <a class="cta-link" href="menu.html">Main Courses</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="cta-link" href="menu.html">Desserts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="cta-link" href="menu.html">Beverages</a>
                         </li>
                     </ul>
                 </div>
+                    <h4> Caesar Salad - $17.99 </h4>
+                    <p>A fresh and flavorfull take on the classic Caesar, made with crisp romaine, garlic croutons, shaved Parmesan, and a rich house-made dressing, with an option to add grilled tofu or avocado.</p>
+                  
+                        <a href="menu.html" class="cta-link">More</a>
+                   
+                </div>    
+            </div>   
+            <div class="col-md-12">        
+                <div class="container">
+                    <h3> Kid-Friendly Menu</h3>
+                    <h4> Vegan Veggie Wrap - $12.99</h4>
+                    <p>A whole wheat wrap filled with hummus, cucumbers, tomatoes, and lettuce, served with a side of fresh fruit.</p>
+                   
+                        <a href="menu.html" class="cta-link">More</a>
+                    
+                </div>
             </div>
-        </nav>
-    </header>
-    <main id="main-content">
-        <section class="banner text-center">
+            <div class="col-md-12">        
+                <div class="container">
+                    <h3> Seasonal & Organic</h3>
+                    <h4> Pumpkin Soup  - $14.99 </h4>
+                    <p>A warm, creamy pumpkin soup made with organic ingredients and a hint of nutmeg.</p>
+                    <a href="menu.html" class="cta-link">More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center"    >
+        <h1>Ready for a Delicious Meal?</h1>
+            <p>Secure your spot at Plant Palette and enjoy our fresh, plant-based creations.</p>
+            <a href="menu.html" class="btn primary-btn hvr-grow"> Reserve Your Table Now</a>
+        </div>
+    </section>
+</main>
+<footer class="text-center py-4">
+    <div class="row">
+        <div class="col-md-6 mb-4">
             <picture>
-                <source media="(min-width: 768px)" srcset="images/banner-menu-large.jpg">
-                <img src="images/banner-menu-small.jpg" alt="White ceramic bowl with plant-based dish" class="img-fluid">
+                <source media="(min-width: 768px)" srcset="images/logo-large.png">
+                <img src="images/logo-small.png" alt="Plant Palette Logo" class="logo">
             </picture>
-            <div class="banner-content">
-                <h1>Our Menu</h1>
-                <p>Savor the taste of nature with our plant-based creations.</p>
-            </div>
-        </section>
-        <section class="menu-items container py-5">
-            <h2>Featured Dishes</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="images/soup-large.jpg">
-                        <img src="images/soup-small.jpg" alt="Creamy soup with green leaf garnish" class="img-fluid">
-                    </picture>
-                    <h3>Harvest Soup</h3>
-                    <p>A warm, creamy blend of seasonal vegetables.</p>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="images/sandwich-large.jpg">
-                        <img src="images/sandwich-small.jpg" alt="Fresh vegetable sandwich on chopping board" class="img-fluid">
-                    </picture>
-                    <h3>Garden Sandwich</h3>
-                    <p>Fresh veggies and hummus on artisan bread.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="text-center py-4">
-        <p>&copy; 2025 Plant Palette. All rights reserved.</p>
-    </footer>
+            <p>Nourish & Thrive</p>
+        </div>
+        <div class="col-md-6 mb-4">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="cta-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="cta-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="cta-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p> Plant Palette &copy; 2025</p>
+        </div>
+    </div>
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

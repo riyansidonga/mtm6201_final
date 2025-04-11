@@ -45,6 +45,15 @@ h3 {
     top: 0;
 }
 
+.menu-type {
+    background-color: var(--secondary-1);
+}
+
+.menu-type {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--secondary-1) !important;
+}
+
 /* Navbar */
 .navbar {
     background-color: var(--primary-1);
@@ -102,7 +111,7 @@ a:active {
 
 .hero img {
     width: 100%;
-    height: 400px;
+    height: 800px;
     object-fit: cover;
 }
 
@@ -161,19 +170,9 @@ section h2 {
     margin-bottom: 1rem;
 }
 
-/* Form */
-.form-control {
-    border-color: var(--primary-3);
-}
-
-.form-control:focus {
-    border-color: var(--primary-1);
-    box-shadow: 0 0 5px var(--primary-1);
-}
-
 /* Footer */
 footer {
-    background-color: var(--primary-2);
+    background-color: var(--primary-1);
     color: var(--secondary-1);
 }
 
@@ -192,4 +191,4 @@ footer {
     .contact-info img {
         height: 150px;
     }
-}   
+}
