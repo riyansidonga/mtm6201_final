@@ -49,8 +49,9 @@ h3 {
     background-color: var(--secondary-1);
 }
 
-.menu-type {
+.menu-type-link  {
     font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
     color: var(--secondary-1) !important;
 }
 
@@ -79,7 +80,7 @@ h3 {
 .primary-btn {
     font-family: 'Open Sans', sans-serif;
     background-color: var(--primary-1);
-    color: var(--secondary-1);
+    color: var(--primary-3);
     border: none;
 }
 
@@ -91,6 +92,18 @@ h3 {
 .primary-btn:active {
     background-color: var(--primary-3) !important;
     color: white !important;
+}
+
+.secondary-btn {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--secondary-1);
+    color: var( --primary-1);
+    border: none;
+}
+
+.secondary-btn:hover {
+    background-color: var(--button-hover);
+    color: var(--secondary-1);
 }
 
 /* Links */
@@ -164,9 +177,14 @@ a:active {
 .menu-items img,
 .contact-info img {
     width: 100%;
-    height: 200px;
+    height: 40  0px;
     object-fit: cover;
     margin-bottom: 1rem;
+}
+
+.cta {
+    background-color:  var(--primary-1);    
+
 }
 
 /* Footer */
